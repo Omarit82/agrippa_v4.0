@@ -1,13 +1,18 @@
 import { Header } from './components/Header/Header';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import { Home } from './components/Home/Home';
+import { UserProvider } from './context/userContext';
 
 function App() {
 
   return (
     <>
-      <Header />
+      <UserProvider>
+        <Header />
+        <Routes>
+          <Route path='/' element={ <Home/>} />
+        </Routes>
+      </UserProvider>
     </>
   )
 }

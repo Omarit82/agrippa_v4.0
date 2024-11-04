@@ -1,7 +1,10 @@
-
+import './Header.css';
 
 export const Header = () => {
     return (
-        <h1>AgrippaKinesio</h1>
+        <header>
+            <h1 className='text-center'>AgrippaKinesio</h1>
+        </header>
+        
     )
 } 

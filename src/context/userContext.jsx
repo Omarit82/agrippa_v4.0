@@ -61,7 +61,6 @@ export const UserProvider = ({ children }) => {
         try {
             await signOut(auth);
             setUser({});
-            //window.location.href ="/"
         } catch (error) {
             console.error("Error al cerrar sesión:", error);
         }

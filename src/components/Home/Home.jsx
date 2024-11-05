@@ -5,7 +5,7 @@ import { CardsListContainer } from '../CardsListContainer/CardsListContainer';
 
 export const Home = () => {
     const { user } = useContext(UserContext);
-    console.log(user);
+    
     return(
         
         <>

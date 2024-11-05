@@ -1,0 +1,12 @@
+.new {
+    max-width: 70px;
+    position: sticky;
+    top: 10%;
+    left: 75%;
+}
+
+@media (min-width: 768px) {
+    .new{
+        left: 90%;
+    }
+}

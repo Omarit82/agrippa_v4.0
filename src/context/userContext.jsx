@@ -1,5 +1,5 @@
 import { createContext, useEffect } from "react";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "@firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut } from "@firebase/auth";
 import { auth } from "../firebase/config";
 import { useState } from "react";
 import Swal from "sweetalert2";
@@ -53,7 +53,6 @@ export const UserProvider = ({ children }) => {
         try {
             const user = await signInWithEmailAndPassword(auth, data.email, data.password);
             setUser(user);
-            window.location.href='/'
         } catch (error) {
             setError("Error en el incio de sesion: "+error);
         }
@@ -62,7 +61,7 @@ export const UserProvider = ({ children }) => {
         try {
             await signOut(auth);
             setUser({});
-            window.location.href ="/"
+            //window.location.href ="/"
         } catch (error) {
             console.error("Error al cerrar sesión:", error);
         }
@@ -71,6 +70,7 @@ export const UserProvider = ({ children }) => {
     const valores = {
         handleLogin,
         handleRegister,
+        handleLogout,
         error,
         user
     }

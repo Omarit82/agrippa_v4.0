@@ -6,4 +6,14 @@ header {
         text-decoration: none;
         color: #801d39;
     }
+
+    .user{
+        color:#dbcacf
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        min-height: 150px;
+    }
 }

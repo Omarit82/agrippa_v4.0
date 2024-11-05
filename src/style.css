@@ -6,3 +6,8 @@
     box-sizing: border-box;
     font-family: Jura, Arial, Helvetica, sans-serif;
 }
+
+main{
+    background-color: #F3CED8;
+    height: 75vh;
+}

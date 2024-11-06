@@ -2,6 +2,7 @@ import { createContext, useEffect } from "react";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut } from "@firebase/auth";
 import { auth } from "../firebase/config";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 export const UserContext = createContext();
@@ -12,6 +13,7 @@ const userInicial = (JSON.parse(sessionStorage.getItem('user')) || {});
 export const UserProvider = ({ children }) => {
     const [error, setError] = useState('');
     const [ user, setUser ] = useState(userInicial);  
+    const navigate = useNavigate();
 
     /** REGISTRO DE UN NUEVO USUARIO **/
     const handleRegister = async (data) =>{
@@ -37,7 +39,7 @@ export const UserProvider = ({ children }) => {
                 title: "Registro Exitoso"
               })
               .then(()=>{
-                window.location.href = '/login'
+                navigate('/');
               });
         } catch (error) {
             setError("Error al realizar el registro: "+error);

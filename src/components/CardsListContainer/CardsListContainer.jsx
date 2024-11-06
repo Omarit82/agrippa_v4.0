@@ -17,11 +17,13 @@ export const CardsListContainer = () => {
             setPacientes(
                 snapshot.docs.map((doc) => ({id: doc.id, ...doc.data() }))
             );
-            console.log(pacientes);
+            
         }).catch((e) => {
             console.log(e);
         })
-    },[pacienteId])
+    },[])
+
+    console.log(pacientes);
     
 
     
@@ -31,7 +33,7 @@ export const CardsListContainer = () => {
             <h2 className="text-center">Contenedor de turnos</h2>
             <Link to= {'/New'} ><img src={ newImage } className="new" /></Link>
             <div>
-                {}
+                
             </div>
         </>
     )

@@ -8,6 +8,7 @@ export const Register = () => {
     
     const { handleRegister,error } = useContext(UserContext);
     const { register, handleSubmit } = useForm();
+    
 
     return (
         <main className="d-flex justify-content-start align-items-center flex-column">

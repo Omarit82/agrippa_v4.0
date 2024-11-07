@@ -15,11 +15,11 @@ export const Register = () => {
             <h2 className="text-center">Registro</h2>
             <form  onSubmit={handleSubmit(handleRegister)}  className="d-flex flex-column w-50 align-items-center m-5" >
                 <label htmlFor="email" className="text-center">Email</label>
-                <input {...register("email")} name="email" placeholder="..Ingrese su email.." className="text-center" />
+                <input {...register("email")} name="email" placeholder="..Ingrese su email.." className="text-center" required/>
                 <label htmlFor="user" className="text-center">Nombre Usuario</label>
-                <input {...register("user")} name="user" placeholder="..Nombre de Usuario.." className="text-center" />
+                <input {...register("user")} name="user" placeholder="..Nombre de Usuario.." className="text-center" required/>
                 <label htmlFor="password" className="text-center"> Password</label>
-                <input {...register("password")} name="password" type="password" placeholder="..Ingrese su password.." className="text-center"/>
+                <input {...register("password")} name="password" type="password" placeholder="..Ingrese su password.." className="text-center"required/>
                 <button type="submit" className="btn btn-info mt-3">Registrar</button>
                 {(error.length !== '') && <p className="text-center">{error}</p>}
             </form>

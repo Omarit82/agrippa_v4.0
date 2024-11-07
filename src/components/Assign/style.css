@@ -1,0 +1,18 @@
+.asignar, .turnosAsignados {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.asignar::-webkit-scrollbar {
+    display: none;
+}
+
+.turnosAsignados::-webkit-scrollbar {
+    display: none;
+}
+.separador {
+    width: 2px;
+    rotate: 0deg;
+    border: 1px solid #801d39;
+}
+

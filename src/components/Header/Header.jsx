@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         
         <header>
-            <Link to='/'className='col'>
+            <Link to='/'>
                 <h1 className='text-center headline mb-0'>AgrippaKinesio</h1>
             </Link>
             { (Object.keys(user).length > 0) && 

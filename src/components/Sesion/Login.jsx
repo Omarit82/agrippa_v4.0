@@ -13,9 +13,9 @@ export const Login = () => {
             <h2 className="text-center">Login</h2>
             <form onSubmit={handleSubmit(handleLogin)} className="d-flex flex-column w-50 align-items-center m-5">
                 <label htmlFor="email">E-mail</label>
-                <input {...register("email")} name="email" placeholder="..e-mail.." className="text-center" />
+                <input {...register("email")} name="email" placeholder="..e-mail.." className="text-center" required />
                 <label htmlFor="pass">Password</label>
-                <input {...register("password")} type="password" name="password" placeholder="..password.." className="text-center"/>
+                <input {...register("password")} type="password" name="password" placeholder="..password.." className="text-center" required/>
                 <button type="submit" className="btn btn-info mt-3">Login</button>
                 {(error.length !== '') && <p className="text-center">{error}</p>}
             </form>

@@ -17,6 +17,7 @@
     "react-google-calendar-api": "^2.3.0",
     "react-hook-form": "^7.53.1",
     "react-router-dom": "^6.27.0",
+    "react-select": "^5.8.2",
     "sweetalert2": "^11.14.5"
   },
   "devDependencies": {

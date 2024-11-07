@@ -1,0 +1,25 @@
+.link {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #801d39;
+}
+
+.btn-success {
+    background-color: #aa3939;
+    border: 0;
+}
+.btn-success:active {
+    color:#aa3939;
+    background-color: #F3CED8;
+}
+.btn-success:hover {
+    color:#aa3939;
+    background-color: #F3CED8;
+}
+
+.btn-success:visited {
+    background-color: #aa3939;
+    color: #F3CED8;
+}

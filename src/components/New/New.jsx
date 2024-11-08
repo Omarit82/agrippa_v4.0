@@ -16,7 +16,8 @@ export const New = () => {
         for( let i = 0; i< data.sessions; i++){
             turnos.push({
                 'Turno':i,
-                'Assigned':false
+                'Assigned':false,
+                'Date': null
             });
         }
 

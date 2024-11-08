@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { PatientContext } from "../../context/patientContext";
+import { PatientContext } from "../../../context/patientContext";
 
 export const AppointmentContainer = () => {
     const { patients } = useContext(PatientContext);
@@ -8,7 +8,7 @@ export const AppointmentContainer = () => {
     useEffect(()=>{
         const aux = [];
         patients.map((item) => (
-            console.log(item)
+            console.log()
         ))
     },[])
 

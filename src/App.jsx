@@ -6,23 +6,25 @@ import { UserProvider } from './context/userContext';
 import { Register } from './components/Sesion/Register';
 import { New } from './components/New/New';
 import { Assign } from './components/Assign/Assign';
-import { PatientProvider } from './context/patientContext';
+import { Turnos } from './components/Turnos/Turnos';
+import { FilterTurnosProvider } from './context/filterTurnosContext';
 
 function App() {
 
   return (
     <>
       <UserProvider>
-      <PatientProvider>
+      <FilterTurnosProvider>
         <Header />
         <Routes>
           <Route path='/' element={ <Home/>} />
           <Route path='/Registro' element={ <Register/>} />
           <Route path='/New' element={ <New /> } />
-          <Route path='/AssignTurn' element={ <Assign />} />
+          <Route path='/Turnos' element={ <Turnos />} />
+          <Route path='/Assign' element={ <Assign />} />
         </Routes>
         <Footer />
-      </PatientProvider>
+      </FilterTurnosProvider>
       </UserProvider>
     </>
   )

@@ -9,9 +9,7 @@ export const FilterTurnosProvider = ( {children} ) => {
 
     function handleFilter(s){
         const fechaJS = new Date(s)
-        console.log(fechaJS)
         const f = Timestamp.fromDate(fechaJS)
-        console.log(f);
         setFecha(f);
     }
     const values = {

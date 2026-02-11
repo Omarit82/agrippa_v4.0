@@ -8,9 +8,6 @@ export const CardsListContainer = () => {
         <>
             <h2 className="text-center">Bienvenido</h2>
             
-            <div>
-                
-            </div>
         </>
     )
 }

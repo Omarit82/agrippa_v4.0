@@ -8,7 +8,6 @@ import { filterTurnosContext } from '../../context/filterTurnosContext';
 
 export const Assign = () =>{
     const [ patients, setPatients ] = useState();
-    const [ turnos, setTurnos ] = useState([]);
     const { fecha } = useContext(filterTurnosContext);
     
     useEffect(() => { 

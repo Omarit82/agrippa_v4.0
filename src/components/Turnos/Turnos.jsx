@@ -1,8 +1,8 @@
 import { Navegador } from "../Navegador/Navegador"
 
 
-
 export const Turnos = () => {
+    
     return (
         <>
             <Navegador />

@@ -9,9 +9,9 @@ export const Header = () => {
    
     return (
         
-        <header>
+        <header className='d-flex align-items-center justify-content-around'>
             <Link to='/'>
-                <h1 className='text-center headline mb-0'>AgrippaKinesio</h1>
+                <h1 className='text-center mb-0'>AgrippaKinesio</h1>
             </Link>
             { (Object.keys(user).length > 0) && 
             <div className='mb-0 d-flex justify-content-end'>

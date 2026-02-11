@@ -6,7 +6,7 @@ export const CardsListContainer = () => {
 
     return(
         <>
-            <h2 className="text-center">Contenedor de turnos</h2>
+            <h2 className="text-center">Bienvenido</h2>
             
             <div>
                 

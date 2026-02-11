@@ -5,10 +5,10 @@ import './style.css';
 export const Navegador = () => {
 
     return (
-      <nav className="d-flex justify-content-around align-items-center navbar">
-        <NavLink to={'/Turnos'} className="link btn btn-success" >Turnos</NavLink>
-        <NavLink to={'/Assign'} className="link btn btn-success" >Asignar Turno</NavLink>
-        <NavLink to={'/New'} className="link btn btn-success" >Nuevo Paciente</NavLink>
+      <nav className="d-flex justify-content-start align-items-start navbar">
+        <NavLink to={'/Turnos'} className="link btn btn-success m-3" >Turnos</NavLink>
+        <NavLink to={'/Assign'} className="link btn btn-success m-3" >Asignar Turno</NavLink>
+        <NavLink to={'/New'} className="link btn btn-success m-3" >Nuevo Paciente</NavLink>
       </nav>
     )
 }

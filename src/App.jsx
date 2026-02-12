@@ -8,6 +8,7 @@ import { New } from './components/New/New';
 import { Assign } from './components/Assign/Assign';
 import { Turnos } from './components/Turnos/Turnos';
 import { FilterTurnosProvider } from './context/filterTurnosContext';
+import { ProtectedContent } from './components/ProtectedContent/ProtectedContent';
 
 function App() {
 
@@ -17,11 +18,15 @@ function App() {
       <FilterTurnosProvider>
         <Header />
         <Routes>
+          /**Public Routes**/
           <Route path='/' element={ <Home/>} />
           <Route path='/Registro' element={ <Register/>} />
-          <Route path='/New' element={ <New /> } />
-          <Route path='/Turnos' element={ <Turnos />} />
-          <Route path='/Assign' element={ <Assign />} />
+          /**Private Routes **/
+          <Route element={<ProtectedContent/>}>
+            <Route path='/New' element={ <New /> } />
+            <Route path='/Turnos' element={ <Turnos />} />
+            <Route path='/Assign' element={ <Assign />} />
+          </Route>
         </Routes>
         <Footer />
       </FilterTurnosProvider>

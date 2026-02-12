@@ -6,6 +6,7 @@ import { Navegador } from '../Navegador/Navegador';
 
 export const Home = () => {
     const { user } = useContext(UserContext);
+    console.log(user.user);
     
     return(
         

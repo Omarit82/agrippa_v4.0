@@ -9,5 +9,5 @@
 
 main{
     background-color: #F3CED8;
-    height: 75vh;
+    min-height: 75vh;
 }
